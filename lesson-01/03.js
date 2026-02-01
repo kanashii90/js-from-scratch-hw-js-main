@@ -5,4 +5,15 @@
 */
 
 // your code
-let sum
+let sum = 0
+let numberMin = 1
+const numberMax = 20
+
+while (numberMin !== numberMax) {
+    if (numberMin % 2 !== 0) {
+        sum += numberMin;
+    }
+    numberMin++;
+}
+console.log("Сумма чисел от 1 до 20:", sum);
+

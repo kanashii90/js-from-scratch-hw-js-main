@@ -6,4 +6,13 @@
 */
 
 // your code
-let factorial
+let factorial = 1
+let count = 0
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+while (count !== numbers.length) {
+    factorial *= numbers[count]
+    count++;
+}
+
+console.log("Сумма факториала:", factorial);
