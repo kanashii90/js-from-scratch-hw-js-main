@@ -15,5 +15,5 @@ while (numberMin !== numberMax) {
     }
     numberMin++;
 }
-console.log("Сумма чисел от 1 до 20:", sum);
+
 

@@ -10,5 +10,3 @@ while (numberMin <= numberMax) {
     sum += numberMin;
     numberMin++;
 }
-
-console.log("Сумма всех чисел:", sum);

@@ -15,4 +15,3 @@ while (count !== numbers.length) {
     count++;
 }
 
-console.log("Сумма факториала:", factorial);
