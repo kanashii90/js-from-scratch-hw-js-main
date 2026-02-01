@@ -3,12 +3,12 @@
 
 // your code
 let sum = 0
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-let count = 0
+let numberMin = 1
+let numberMax= 20
 
-while (count !== numbers.length) {
-    sum += numbers[count];
-    count++;
+while (numberMin <= numberMax) {
+    sum += numberMin;
+    numberMin++;
 }
 
 console.log("Сумма всех чисел:", sum);
