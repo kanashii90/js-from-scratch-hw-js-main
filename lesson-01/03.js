@@ -6,14 +6,13 @@
 
 // your code
 let sum = 0
-let numberMin = 1
-const numberMax = 20
+let number = 1
 
-while (numberMin !== numberMax) {
-    if (numberMin % 2 !== 0) {
-        sum += numberMin;
+while (number <= 20) {
+    if (number % 2 !== 0) {
+        sum += number;
     }
-    numberMin++;
+    number++;
 }
 
 

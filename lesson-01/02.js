@@ -7,11 +7,10 @@
 
 // your code
 let factorial = 1
-let count = 0
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let number = 1
 
-while (count !== numbers.length) {
-    factorial *= numbers[count]
-    count++;
+while (number <= 10) {
+    factorial *= number;
+    number++;
 }
 

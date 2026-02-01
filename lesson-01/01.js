@@ -4,9 +4,8 @@
 // your code
 let sum = 0
 let numberMin = 1
-let numberMax= 20
 
-while (numberMin <= numberMax) {
+while (numberMin <= 20) {
     sum += numberMin;
     numberMin++;
 }
