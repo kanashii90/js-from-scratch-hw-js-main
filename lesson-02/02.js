@@ -39,5 +39,6 @@ if (dice1 === dice2 && dice1 > 3) {
     isWinningDouble = true;
     console.log('Выигрышный дубль!')
 } else {
+    isWinningDouble = false;
     console.log('Не выигрышный дубль.')
 }

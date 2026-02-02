@@ -9,7 +9,7 @@
 //     return Array.from({length: n}, (_, i) => i + 1);
 // }
 
-const score = 5;
+const score = 80;
 let grade
 
 const A = Array.from({length: 11}, (_, i) => 90 + i);
