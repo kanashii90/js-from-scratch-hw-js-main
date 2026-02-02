@@ -4,6 +4,46 @@
  * Результат сохраните в переменной grade.
  */
 
-const score = 70 // тестовое значение, можно изменять
+
+// function gradeRange(n) {
+//     return Array.from({length: n}, (_, i) => i + 1);
+// }
+
+const score = 5;
 let grade
-// your code
+
+const A = Array.from({length: 11}, (_, i) => 90 + i);
+const B = Array.from({length: 10}, (_, i) => 80 + i);
+const C = Array.from({length: 10}, (_, i) => 70 + i);
+const D = Array.from({length: 20}, (_, i) => 50 + i);
+const F = Array.from({length: 50}, (_, i) => i);
+
+
+if (A.includes(score)) {
+    grade = "A";
+} if (B.includes(score)) {
+    grade = "B";
+} if (C.includes(score)) {
+    grade = "C";
+} if (D.includes(score)) {
+    grade = "D";
+} if (F.includes(score)) {
+    grade = "F";
+}
+
+console.log(grade);
+
+
+
+
+// function createArrayWithArrayFrom(n) {
+//     return Array.from({ length: n }, (_, i) => i + 1);
+// }
+//
+// // Пример использования:
+// const numbers = createArrayWithArrayFrom(50); // [1, 2, 3, 4, 5]
+//
+// console.log(numbers);
+
+// const score = 70 // тестовое значение, можно изменять
+// // your code
