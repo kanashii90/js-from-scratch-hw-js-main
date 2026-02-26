@@ -28,6 +28,6 @@ function includesElement(array, element) {
     return false;
 }
 
-export default includesElement;
+
 
 
