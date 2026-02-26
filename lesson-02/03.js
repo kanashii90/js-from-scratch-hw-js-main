@@ -21,20 +21,33 @@ const F = Array.from({length: 50}, (_, i) => i);
 
 if (A.includes(score)) {
     grade = "A";
-} if (B.includes(score)) {
+}
+if (B.includes(score)) {
     grade = "B";
-} if (C.includes(score)) {
+}
+if (C.includes(score)) {
     grade = "C";
-} if (D.includes(score)) {
+}
+if (D.includes(score)) {
     grade = "D";
-} if (F.includes(score)) {
+}
+if (F.includes(score)) {
     grade = "F";
 }
 
 console.log(grade);
 
-
-
+// if (score >= 90) {
+//     grade = "A";
+// } else if (score >= 80) {
+//     grade = "B";
+// } else if (score >= 70) {
+//     grade = "C";
+// } else if (score >= 50) {
+//     grade = "D";
+// } else {
+//     grade = "F";
+// }
 
 // function createArrayWithArrayFrom(n) {
 //     return Array.from({ length: n }, (_, i) => i + 1);
