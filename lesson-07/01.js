@@ -43,3 +43,8 @@ document.getElementById('prev-button').addEventListener('click', clickPrev);
 
 document.getElementById('next-button').addEventListener('click', clickNext);
 
+let timerId = setInterval(clickNext, 3000)
+
+document.getElementById('web-tech-image').addEventListener('mouseenter', () => clearInterval(timerId));
+
+document.getElementById('web-tech-image').addEventListener('mouseleave', () => {timerId = setInterval(clickNext, 3000)});
