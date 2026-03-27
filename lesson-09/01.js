@@ -79,4 +79,3 @@ petShop.addEventListener('click', (event) => {
   }
 }})
 
-console.log(petButton)
