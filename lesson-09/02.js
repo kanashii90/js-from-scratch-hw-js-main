@@ -32,12 +32,33 @@ const countdownDisplay = document.getElementById('countdown')
 let isTimerStarted = false
 let timerId
 
+// race condition (гонка состояний) если не остановить таймер.
 startButton.addEventListener('click', () => {
-  let counter = 3
+    // race condition stop
+    if (isTimerStarted) return // early return - ранний выход
 
-  // your code
+    isTimerStarted = true
+
+    let counter = 3
+      countdownDisplay.textContent = counter
+
+    timerId = setInterval(() => {
+        counter--
+
+        if (counter > 0) {
+            countdownDisplay.textContent = counter
+        }
+        else {
+            countdownDisplay.textContent = '🚀'
+            clearInterval(timerId)
+            isTimerStarted = false
+        }
+    }, 1000)
 })
 
+
 cancelButton.addEventListener('click', () => {
-  // your code
+    clearInterval(timerId)
+    countdownDisplay.textContent = 'Отменено'
+    isTimerStarted = false
 })
