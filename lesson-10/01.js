@@ -102,7 +102,8 @@ const controller = {
         }
     },
     deleteMovie(movieId) {
-        model.deleteMovie(movieId)  // Удаляем фильм через модель
+        model.deleteMovie(movieId)
+        const messageBox = document.querySelector('.message-box')
         messageBox.textContent = "Фильм успешно удалён!"
     }
 }
