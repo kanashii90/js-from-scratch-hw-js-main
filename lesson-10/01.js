@@ -56,6 +56,7 @@ const view = {
 
         const movieList = document.querySelector('.list');
       movieList.addEventListener('click', (e) => {
+          e.stopPropagation()
         const movieId = e.target.parentElement.id
         controller.deleteMovie(movieId);
         });
